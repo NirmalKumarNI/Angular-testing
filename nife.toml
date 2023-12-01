@@ -1,0 +1,51 @@
+# nile.toml file generated for angulartestingap on 2023-12-01T13:04:18+05:30
+
+app = "angulartestingap"
+id = "a8da2c471906dde3f6da23b1e39443a1a66c6db3504414961716288ca9cab1d597b3ce94b13948a5e73bc1ef28881d19"
+
+[build]
+  builtin = "static angular"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[env]
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
+
+[[services]]
+  external_port = 80
+  http_checks = []
+  internal_port = 80
+  protocol = "tcp"
+  routing_policy = "Latency"
+  script_checks = []
+
+  [services.concurrency]
+    hard_limit = 25
+    soft_limit = 20
+    type = "connections"
+
+  [services.limits]
+    cpu = "1"
+    memory = "256"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+  [services.requests]
+    cpu = "0.5"
+    memory = "128"
+
+  [[services.tcp_checks]]
+    grace_period = "1s"
+    interval = "15s"
+    restart_limit = 6
+    timeout = "2s"
