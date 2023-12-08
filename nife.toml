@@ -1,10 +1,10 @@
-# nile.toml file generated for angularoptions on 2023-12-08T16:29:48+05:30
+# nile.toml file generated for optionsangular on 2023-12-08T16:33:05+05:30
 
-app = "angularoptions"
-id = "2e33f1673beb52d9b10ff416251eabc33a0acc81874266cae75f2e5bf1800c48eae096d8545fdc2a97a15a425aa10d57"
+app = "optionsangular"
+id = "58623a09515eebc3c3e1587e159e88c2d262ed2e51982fe1459e2ea86a339fed6f5f36de474679b7ac80916fcf941146"
 
 [build]
-  builtin = "static angular"
+  builtin = "node"
 
 kill_signal = "SIGINT"
 kill_timeout = 5
@@ -20,7 +20,7 @@ kill_timeout = 5
   http_checks = []
   internal_port = 80
   protocol = "tcp"
-  routing_policy = "Geolocation"
+  routing_policy = "Latency"
   script_checks = []
 
   [services.concurrency]
