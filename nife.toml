@@ -1,7 +1,7 @@
-# nile.toml file generated for angularcheckactino on 2023-12-08T16:05:27+05:30
+# nile.toml file generated for angularoptions on 2023-12-08T16:29:48+05:30
 
-app = "angularcheckactino"
-id = "c157b8100d123c4a26b34680433474b131adcefe4c26bd90481dd75cd2a97845710976d2398c463f99f769c955e0682f"
+app = "angularoptions"
+id = "2e33f1673beb52d9b10ff416251eabc33a0acc81874266cae75f2e5bf1800c48eae096d8545fdc2a97a15a425aa10d57"
 
 [build]
   builtin = "static angular"
