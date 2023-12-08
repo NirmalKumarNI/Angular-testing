@@ -1,7 +1,7 @@
-# nile.toml file generated for angulartestingap on 2023-12-01T13:04:18+05:30
+# nile.toml file generated for angularcheckactino on 2023-12-08T16:05:27+05:30
 
-app = "angulartestingap"
-id = "a8da2c471906dde3f6da23b1e39443a1a66c6db3504414961716288ca9cab1d597b3ce94b13948a5e73bc1ef28881d19"
+app = "angularcheckactino"
+id = "c157b8100d123c4a26b34680433474b131adcefe4c26bd90481dd75cd2a97845710976d2398c463f99f769c955e0682f"
 
 [build]
   builtin = "static angular"
@@ -20,7 +20,7 @@ kill_timeout = 5
   http_checks = []
   internal_port = 80
   protocol = "tcp"
-  routing_policy = "Latency"
+  routing_policy = "Geolocation"
   script_checks = []
 
   [services.concurrency]
